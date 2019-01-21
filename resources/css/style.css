@@ -125,6 +125,7 @@ a:visited{
     text-decoration: none;
     padding-bottom: 1px ;
     border-bottom: 1px solid #e67e22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom .2s, color .2s;
 }
 a:hover,
@@ -322,6 +323,11 @@ header{
     float: left;
     font-size:150%;
     margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
 }
 
 .btn-app img{
