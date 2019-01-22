@@ -3,23 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Omifood is a prenium food delivery service with he mission to bring affordable and healty meals to as many people as possible.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- normalize  -->
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <!-- Grid -->
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-     <!-- 圖標 -->
-     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <!-- 圖標 -->
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" type="text/css" href="./vendors/css/animate.css">
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <!-- Google Font -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic"
         type="text/css">
-   
-
-
+    <!-- fav -->
+    <link rel="apple-touch-icon" sizes="57x57" href="resources/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="resources/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="resources/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="resources/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/fav/favicon-16x16.png">
+    <link rel="manifest" href="resources/fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="resources/fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Omnifood</title>
 </head>
 
@@ -29,23 +47,25 @@
         <nav>
             <div class="row">
                 <img src="./resources/img/logo-white.png" alt="Omnifood logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">Food delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sign Up</a></li>
+                <img src="./resources/img/logo.png" alt="Omnifood logo" class="logo-black">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Food delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#plan">Sign Up</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i name="menu" class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food . <br> HELLO SUPER HEALTHY MEALS.</h1>
-            <a href="#" class="btn btn-full"> I'm hungry </a>
-            <a href="#" class="btn btn-ghost">Show me more</a>
+            <a href="#" class="btn btn-full js---scroll-to-plans"> I'm hungry </a>
+            <a href="#" class="btn btn-ghost js---scroll-to-start">Show me more</a>
         </div>
     </header>
 
-    <section class="section-features">
-        <div class="row">
+    <section id="features" class="section-features js---section-features">
+        <div class="row js--wp-1">
             <h2>Get food fast &mdash; not fast food.</h2>
             <p class="long-copy">
                 Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for
@@ -136,13 +156,13 @@
         </ul>
     </section>
 
-    <section class="section-steps clearfix">
+    <section id="works" class="section-steps clearfix">
         <div class="row">
             <h2>How it works &mdash; Simple as 1,2,3</h2>
         </div>
-        <div class="row">
+        <div class="row ">
             <div class="col span-1-of-2 steps-box">
-                <img src="./resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen">
+                <img src="./resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -163,11 +183,11 @@
         </div>
     </section>
 
-    <section class="section-cities">
+    <section id="cities" class="section-cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
                 <img src="./resources/img/lisbon-3.jpg" alt="Lisbon">
                 <h3>Lisbon</h3>
@@ -267,13 +287,13 @@
         </div>
     </section>
 
-    <section class="section-plans">
+    <section id="plan" class="section-plans js---section-plans">
         <div class="row">
             <h2>Sign up and pricing plans</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">$399 <span>/ month</span> </p>
@@ -429,6 +449,20 @@
             </div>
         </div>
     </footer>
+
+    <!-- html5shiv.js的作用– 完美解决IE(IE6/IE7/IE8)不兼容HTML5标签问题  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <!-- Respond.js讓IE6-8支援CSS3 Media Query -->
+    <script src="./vendors/js/respond.js"></script>
+    <!-- selectivizr是一個JavaScript實用程序，它在Internet Explorer 6-8中模擬CSS3偽類和屬性選擇器。 -->
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- <script src="./vendors/js/jquery.min.js"></script> -->
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
+    <!-- My script -->
+    <script src="./resources/js/script.js"></script>
 </body>
 
 </html>
